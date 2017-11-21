@@ -405,7 +405,7 @@
 		}
 		bingReady();
 		return function(callback){
-			//没有加载完就直接执行，没有加载完就加到队列里面去
+			//加载完就直接执行，没有加载完就加到队列里面去
 			ready.isReady ? callback() : readyList.push(callback);
 		}	
 	})();
